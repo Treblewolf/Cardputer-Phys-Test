@@ -102,7 +102,7 @@ const uint16_t sprite_enemy2_data[20 * 20] = {
 // --- Helper Structs ---
 struct Vec2D { float x = 0.0f; float y = 0.0f; };
 
-// Updated PhysicsObject to include sprite info
+// Include sprite info in PhysicsObject
 struct PhysicsObject {
     Vec2D position; Vec2D velocity; Vec2D acceleration;
     // Width/Height now refer to the sprite dimensions for drawing & collision AABB
@@ -123,7 +123,6 @@ float deltaTime = 0.0f;
 M5Canvas canvas(&M5Cardputer.Display); // Sprite buffer
 
 // --- Function Declarations ---
-// (Signatures remain the same)
 void updatePhysics();
 bool checkAABBCollision(const PhysicsObject& a, const PhysicsObject& b);
 void resolveCollision(PhysicsObject& a, PhysicsObject& b);
