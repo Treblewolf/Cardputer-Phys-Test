@@ -7,7 +7,6 @@ A lightweight and modular 2D physics engine with sprite rendering for the **M5St
 - Gravity simulation for all objects  
 - AABB collision detection & resolution  
 - Sprite rendering with `M5Canvas`  
-- Keyboard input using `Keyboard_Class`  
 - Lightweight
 - Easily extendable for simple 2D games or physics demos
 
@@ -33,6 +32,6 @@ Install these libraries via the Arduino Library Manager:
 
 ## How It Works
 
-The engine uses a basic update-render loop running at ~70FPS using `delay(33)`. Objects are represented as simple structures containing position, velocity, and dimensions.
+The engine uses a basic update-render loop running at ~70FPS. Objects are represented as simple structures containing position, velocity, and dimensions.
 
 Collision is resolved with axis separation logic (AABB), and gravity is applied as a constant force each frame.
